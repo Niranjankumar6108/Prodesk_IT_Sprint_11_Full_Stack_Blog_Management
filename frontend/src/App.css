@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 :root {
@@ -141,8 +140,8 @@ button:disabled {
   background: #f9faf8;
 }
 
-.nav-search > span,
-.toolbar-search > span {
+.nav-search>span,
+.toolbar-search>span {
   color: var(--muted);
   font-size: 1.35rem;
 }
@@ -253,7 +252,7 @@ button:disabled {
   color: #ebc486;
 }
 
-.hero-content > p {
+.hero-content>p {
   max-width: 445px;
   margin: 0;
   color: #d0ded6;
@@ -356,7 +355,7 @@ button:disabled {
   color: #3c4837;
 }
 
-.art-card-back > span {
+.art-card-back>span {
   font-size: .7rem;
   font-weight: 800;
   letter-spacing: 3px;
@@ -366,11 +365,9 @@ button:disabled {
   width: 100%;
   height: 80px;
   margin-top: 22px;
-  background: repeating-linear-gradient(
-    to bottom,
-    #53624a 0 2px,
-    transparent 2px 14px
-  );
+  background: repeating-linear-gradient(to bottom,
+      #53624a 0 2px,
+      transparent 2px 14px);
   opacity: .5;
 }
 
@@ -1011,7 +1008,7 @@ button:disabled {
   background: #fcfdfb;
 }
 
-.editor-footer > span {
+.editor-footer>span {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -1106,7 +1103,9 @@ button:disabled {
 }
 
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* ARTICLE MODAL */
@@ -1139,6 +1138,7 @@ button:disabled {
     opacity: 0;
     transform: translateY(15px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1262,7 +1262,7 @@ button:disabled {
 }
 
 .footer p,
-.footer > span {
+.footer>span {
   color: var(--muted);
   font-size: .75rem;
 }
@@ -1352,7 +1352,7 @@ button:disabled {
     font-size: 2.8rem;
   }
 
-  .hero-content > p {
+  .hero-content>p {
     font-size: .85rem;
   }
 
@@ -1508,3 +1508,94 @@ button:disabled {
   }
 }
 
+
+
+
+.post-review-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 14px 0;
+  padding: 11px 13px;
+  background: #faf9fe;
+  border: 1px solid #eeebf6;
+  border-radius: 10px;
+}
+
+.post-review-stars {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.post-review-stars strong {
+  color: #22263a;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.post-review-stars span {
+  color: #efa928;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.post-review-count {
+  border: 0;
+  background: transparent;
+  color: #6545c5;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.post-review-count:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .post-review-summary {
+    padding: 9px 10px;
+  }
+
+  .post-review-stars {
+    gap: 6px;
+  }
+
+  .post-review-stars span {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+}
+
+
+
+
+
+/* Blog card review summary */
+.card-review-summary {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 14px 0;
+  font-size: 13px;
+  color: #73798b;
+}
+
+.card-rating-stars {
+  color: #f5a623;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+.card-review-summary strong {
+  color: #202437;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.card-review-summary>span:last-child {
+  color: #73798b;
+}
